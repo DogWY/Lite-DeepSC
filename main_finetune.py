@@ -12,7 +12,7 @@ from transformer_constellation import Transformer
 from torchtext import data
 from torchtext.data import Field, Dataset
 from torchtext.data import BucketIterator
-from adnet import ADNet
+from .LS_refined.adnet import ADNet
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

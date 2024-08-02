@@ -13,7 +13,7 @@ from torchtext.data import BucketIterator
 from torchtext.data.utils import get_tokenizer
 from hyperparameter import Hyperparameter as hp
 from quant_transformer import QuantTransformer
-from adnet import ADNet
+from .LS_refined.adnet import ADNet
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

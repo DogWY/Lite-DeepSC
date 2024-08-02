@@ -22,7 +22,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Function
 import math
-from adnet import ADNet
+from .LS_refined.adnet import ADNet
 from utils_quantization import QuantizedLinear, AveragedRangeTracker, AsymmetricQuantizer
 
 class PositionalEncoding(nn.Module):
